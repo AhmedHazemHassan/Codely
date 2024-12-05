@@ -1,0 +1,125 @@
+/* General styles */
+body, html, .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: #1a1a1a; /* Consistent background */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensure content is centered vertically */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding:0rem;
+
+}
+
+/* Header CSS */
+
+/* Style for the header container */
+.header-left {
+  padding: 3rem 0 0 0;
+  flex-grow: 1; /* This takes up the space on the left side */
+  display: flex;
+  justify-content: center; /* Center the header title */
+}
+
+.header-left h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #535bf2;
+  margin: 0;
+}
+
+/* Right section (Navigation links) */
+.header-right nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  padding:0 2rem 0 0;
+  align-items: center; /* Align the navigation links to the right */
+}
+
+.header-right nav a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.header-right nav a:hover {
+  color: #0056b3;
+}
+
+/* Top-right section (Welcome Back) */
+
+/* Form and container styles */
+form {
+  width: 100%;
+  max-width: 500px; /* Allow it to stretch more */
+  padding: 1rem 5rem 1rem 5rem;
+  background: #222; /* Match design */
+  border-radius: 15px;
+  vertical-align: center;
+  align-content: center;}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  background-color: #cad4db;
+  color: #fff;
+}
+
+form button {
+  
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #21a1f1;
+}
+
+footer {
+  padding: 0.1rem;
+  width: 100vw; /* Full viewport width */
+  background-color: #535bf2; /* Purple background */
+  color: white;
+  text-align: center;
+  margin: 0; /* No extra spacing */
+  box-sizing: border-box; /* Include padding in total width */
+  font-size: 15px;
+  position: relative; /* Ensure proper positioning */
+  left: 0; /* Align to the left of the screen */
+}
+
+
