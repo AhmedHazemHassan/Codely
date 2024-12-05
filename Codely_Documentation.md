@@ -66,7 +66,8 @@ Implement microservices architecture to support platform growth and isolate func
 3. Performance
 - Provide fast response times for hardware control and code generation.
 4. Reliability
-Ensure 99.9% uptime for real-time control panels and project management.
+- Deliver consistent platform performance with minimal downtime, ensuring real-time control panels
+and project management are available and responsive at all times.
 5. Usability
 - User-friendly interface with tutorials for new users.
 - Support for intuitive workflows from project creation to deployment.
