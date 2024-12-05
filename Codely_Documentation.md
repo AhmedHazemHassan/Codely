@@ -19,41 +19,41 @@ and project exploration.
 User Personas:
 
 1. Tech Enthusiast (Student/Hobbyist)
-Background: Beginner in microprocessor projects.
-Goals: Prototype ideas for academic or personal use.
-Pain Points: Limited programming knowledge.
+ Background: Beginner in microprocessor projects.
+ Goals: Prototype ideas for academic or personal use.
+ Pain Points: Limited programming knowledge.
 2. Collaborative Innovator (Team Leader)
-Background: Experienced professional leading collaborative projects.
-Goals: Manage team contributions and oversee multiple projects.
-Pain Points: Lack of streamlined collaboration features.
+ Background: Experienced professional leading collaborative projects.
+ Goals: Manage team contributions and oversee multiple projects.
+ Pain Points: Lack of streamlined collaboration features.
 3. Educator/Trainer
-Background: Teaches IoT and electronics courses.
-Goals: Provide engaging, hands-on learning experiences.
-Pain Points: Limited access to intuitive platforms for guiding students.
+ Background: Teaches IoT and electronics courses.
+ Goals: Provide engaging, hands-on learning experiences.
+ Pain Points: Limited access to intuitive platforms for guiding students.
 
 
 Functional Requirements:
 
 1. User Authentication and Authorization
-- Allow users to create accounts with:
-  - Username, email, date of birth, password, confirm password.
-- Secure login/logout functionality.
-- Support role-based access (Admin, Collaborator, Viewer).
+ - Allow users to create accounts with:
+   - Username, email, date of birth, password, confirm password.
+ - Secure login/logout functionality.
+ - Support role-based access (Admin, Collaborator, Viewer).
 2. Project Management
 Users can:
-- Create projects with a name, description, and visibility settings (public, private, team).
-- Add hardware components (e.g., microprocessors, sensors, actuators).
-- Collaborate on team projects by adding other users.
+ - Create projects with a name, description, and visibility settings (public, private, team).
+ - Add hardware components (e.g., microprocessors, sensors, actuators).
+ - Collaborate on team projects by adding other users.
 3. Hardware Integration and Automation
-- Define hardware functionality using natural language commands.
-- Auto-generate control code for hardware.
-- Download and upload project configurations.
+ - Define hardware functionality using natural language commands.
+ - Auto-generate control code for hardware.
+ - Download and upload project configurations.
 4. Real-Time Interaction
-- Provide control panels to manage connected hardware.
-- Visualize data from sensors or output devices.
+ - Provide control panels to manage connected hardware.
+ - Visualize data from sensors or output devices.
 5. Project Exploration and Sharing
-- Search projects using keywords, fields, or names.
-- Access public projects and curated templates uploaded by platform admins.
+ - Search projects using keywords, fields, or names.
+ - Access public projects and curated templates uploaded by platform admins.
   
   
 Non-Functional Requirements:
