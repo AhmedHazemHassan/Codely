@@ -50,7 +50,7 @@ const CreateAccPage: React.FC = () => {
 
     // Simulate account creation (you can add an API call here)
     alert('Account Created Successfully!');
-    navigate('/home'); // Redirect to HomePage after account creation
+    navigate('/'); // Redirect to login page after account creation
   };
 
   return (
