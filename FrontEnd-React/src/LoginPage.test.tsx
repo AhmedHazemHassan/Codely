@@ -1,7 +1,8 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { expect, describe, it } from 'vitest';  // For testing with Vitest
-import { BrowserRouter } from 'react-router-dom'; // Required for handling routing in tests
-import LoginPage from '../LoginPage'; // Adjust the path if necessary
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import '@testing-library/jest-dom'; // Import jest-dom for custom matchers like toBeInTheDocument
+import { BrowserRouter } from 'react-router-dom'; // For routing
+import LoginPage from './LoginPage'; // Adjust import path if necessary
 
 // Utility to wrap the component with necessary context providers (like Router)
 const renderLoginPage = () => {
@@ -55,8 +56,6 @@ describe('LoginPage', () => {
 
     fireEvent.click(screen.getByRole('button', { name: /login/i }));
 
-    // Assuming that the page redirects, we can check if the "home" page is visited.
-    // If using something like `react-router`, you can spy on the navigate function.
     await waitFor(() => {
       expect(window.location.pathname).toBe('/home');
     });
