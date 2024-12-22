@@ -18,6 +18,14 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
 
+    - name: Cache Node Modules
+      uses: actions/cache@v3
+      with:
+        path: FrontEnd-React/node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
@@ -32,6 +40,7 @@ jobs:
       run: |
         cd FrontEnd-React
         npm run lint
+      continue-on-error: false
 
     - name: Build Project
       run: |
@@ -41,7 +50,14 @@ jobs:
     - name: Run Tests
       run: |
         cd FrontEnd-React
-        npm run test
+        npm run test -- --verbose
+      continue-on-error: false
+
+    - name: Upload Coverage Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: FrontEnd-React/coverage
 
     - name: Run Vite Preview (Optional)
       run: |
