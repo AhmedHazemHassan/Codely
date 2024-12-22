@@ -1,0 +1,264 @@
+/* General styles */
+body, html, .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: #1a1a1a; /* Consistent background */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensure content is centered vertically */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0rem;
+}
+
+/* Header CSS */
+
+/* Style for the header container */
+.header-left {
+  padding: 3rem 0 0 0;
+  flex-grow: 1; /* This takes up the space on the left side */
+  display: flex;
+  justify-content: center; /* Center the header title */
+}
+
+.header-left h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #535bf2;
+  margin: 0;
+}
+
+/* Right section (Navigation links) */
+.header-right nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  padding: 0 2rem 0 0;
+  align-items: center; /* Align the navigation links to the right */
+}
+
+.header-right nav a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.header-right nav a:hover {
+  color: #0056b3;
+}
+
+/* Top-right section (Welcome Back) */
+
+/* Form and container styles */
+form {
+  width: 100%;
+  max-width: 500px; /* Allow it to stretch more */
+  padding: 1rem 5rem 1rem 5rem;
+  background: #222; /* Match design */
+  border-radius: 15px;
+  vertical-align: center;
+  align-content: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  background-color: #cad4db;
+  color: #fff;
+}
+
+form button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #21a1f1;
+}
+
+footer {
+  padding: 0.1rem;
+  width: 100vw; /* Full viewport width */
+  background-color: #535bf2; /* Purple background */
+  color: white;
+  text-align: center;
+  margin: 0; /* No extra spacing */
+  box-sizing: border-box; /* Include padding in total width */
+  font-size: 15px;
+  position: relative; /* Ensure proper positioning */
+  left: 0; /* Align to the left of the screen */
+}
+
+/* Two-column layout */
+.homepage-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #1a1a1a; /* Consistent background */
+}
+
+.main-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 1px solid #ddd;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #535bf2;
+}
+
+.project-list,
+.ready-projects-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-item,
+.ready-project-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.project-link,
+.ready-project-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.project-link:hover,
+.ready-project-link:hover {
+  text-decoration: underline;
+}
+
+.project-visibility,
+.ready-project-description {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.add-project-button,
+.logout-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.add-project-button:hover,
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+/* Details Page Styles */
+.details-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.details-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #535bf2;
+  margin-bottom: 10px;
+}
+
+.details-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.details-code {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  overflow-x: auto;
+  max-height: 300px;
+}
+
+.details-back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.details-back-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  font-size: 12px; /* Smaller text */
+  padding: 3px 6px; /* Smaller padding */
+  border-radius: 4px; /* Rounded corners */
+  border: 1px solid #ccc; /* Border styling */
+  background-color: #f5f5f5; /* Background color */
+  color: #333; /* Text color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.delete-button:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
