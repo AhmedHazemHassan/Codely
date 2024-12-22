@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { expect } from 'vitest';  // For testing with Vitest
+import { expect, describe, it } from 'vitest';  // For testing with Vitest
 import { BrowserRouter } from 'react-router-dom'; // Required for handling routing in tests
 import LoginPage from '../LoginPage'; // Adjust the path if necessary
 
