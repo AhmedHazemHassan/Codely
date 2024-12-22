@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for Meshnettak
+name: CI/CD Pipeline for Codely
 
 on:
   push:
