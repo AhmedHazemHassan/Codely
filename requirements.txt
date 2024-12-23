@@ -1,3 +1,28 @@
-Django
-djangorestframework>=3.14.0
+# Core dependencies
+Django>=4.0,<5.0
+djangorestframework
 djangorestframework-simplejwt
+
+# Database
+psycopg2-binary
+
+# Testing
+pytest-django
+pytest
+pytest-cov
+
+# Environment variables and configuration
+python-decouple
+
+# Linting and formatting
+flake8
+black
+
+# Optional: API Documentation
+drf-yasg
+
+# Deployment and production
+gunicorn
+whitenoise
+django-cors-headers
+
