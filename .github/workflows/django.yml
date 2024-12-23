@@ -16,9 +16,9 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          POSTGRES_USER: testuser
-          POSTGRES_PASSWORD: testpassword
-          POSTGRES_DB: testdb
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: 1234
+          POSTGRES_DB: codelydb
         ports:
           - 5432:5432
         options: >-
