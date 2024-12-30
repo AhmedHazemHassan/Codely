@@ -53,3 +53,15 @@ jobs:
         DATABASE_URL: postgres://testuser:testpassword@localhost:5432/testdb
       run: |
         python manage.py test
+
+  deploy:
+       needs: test
+       runs-on: ubuntu-latest
+       if: ${{ always() }}  # Always run the deployment job, even if tests fail
+       steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
+  
+        - name: Deploy Application
+          run: |
+            echo "Deploying the application..." # Replace this with actual deployment commands
